@@ -15,9 +15,9 @@
               <div class="col l4 offset-l2 s12">
                 <ul>
                   <li><router-link tag="a" class="grey-text text-lighten-3" to="/">HOME</router-link></li>
-                  <li><router-link tag="li" class="grey-text text-lighten-3" to="/">BLOGS</router-link></li>
-                  <li><router-link tag="li" class="grey-text text-lighten-3" to="/">CREATE POST</router-link></li>
-                  <li><router-link tag="li" class="grey-text text-lighten-3" to="/">LOGIN/REGISTER</router-link></li>
+                  <li><router-link tag="a" class="grey-text text-lighten-3" to="/">BLOGS</router-link></li>
+                  <li><router-link tag="a" class="grey-text text-lighten-3" to="/">CREATE POST</router-link></li>
+                  <li><router-link tag="a" class="grey-text text-lighten-3" to="/">LOGIN/REGISTER</router-link></li>
                 </ul>
               </div>
             </div>

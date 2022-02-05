@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <BlogPost :post="welcomeScreen" />
+    <hr>
     <BlogPost :post="post" v-for="(post,index) in sampleBlogPost" :key="index"/>
+    <hr>
     <div class="row">
     <BlogCard :post="post" v-for="(post,index) in sampleBlogCard" :key="index" />
     </div>

@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Nav />
+    <Nav v-if="!navigation" />
     <router-view/>
-    <Footer />
+    <Footer v-if="!navigation"/>
   </div>
 </template>
 
@@ -14,6 +14,29 @@ export default {
   components:{
     Nav,
     Footer
+  },
+  data(){
+    return{
+      navigation:null
+    }
+  },
+  created(){
+    this.checkRoute()
+  },
+  methods:{
+    checkRoute(){
+      if(this.$route.name==="Login" || this.$route.name==="Registration" || this.$route.name==="ResetPassword")
+      {
+      this.navigation=true
+      return;
+      }
+    this.navigation=false
+    }
+  },
+  watch:{
+    $route(){
+      this.checkRoute();
+    }
   },
   mounted () {
     M.AutoInit()
